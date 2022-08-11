@@ -1,0 +1,35 @@
+
+.cardComplete{
+    flex-direction: column;
+    text-align: center;
+    width: 55%;
+    
+}
+.edit-card img{
+    width: 3rem;
+    margin-bottom: 1rem;
+}
+.edit-card h1{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: var(--Very-dark-violet);
+    margin-bottom: .8rem;
+}
+.edit-card p{
+    color: var(--Dark-grayish-violet);
+    font-size: .8rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.edit-card button{
+    width: 90%;
+    height: 2.6rem;
+    border-radius: .3rem;
+    border: none;
+    outline: none;
+    color: #ffff;
+    font-family: 'Space Grotesk', sans-serif;
+    background-color:var(--Very-dark-violet);
+    cursor: pointer;
+}

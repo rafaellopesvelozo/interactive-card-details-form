@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap:break-word;
+}
+:root{
+    --Linear-gradient-active-input-border: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+    --Red-input-errors: hsl(0, 100%, 66%);
+
+
+    /*neutral*/
+    --White: hsl(0, 0%, 100%);
+    --Light-grayish-violet: hsl(270, 3%, 87%);
+    --Dark-grayish-violet: hsl(279, 6%, 55%);
+    --Very-dark-violet: hsl(278, 68%, 11%);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.main{
+    display: flex;
+}
+
+/*cartões-aside*/
+.aside-card{
+    width: 25%;
+    height: 100vh;
+    background-image: url(../images/bg-main-desktop.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+
+.front-card{ 
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2.5%;
+    position: absolute;
+    width: 26vw;
+    top: 7rem;
+    left: 7rem;
+    height: 10rem;
+    background-image: url(../images/bg-card-front.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 17px -5px rgba(0,0,0,0.61);
+    -webkit-box-shadow: 2px 2px 17px -5px rgba(0,0,0,0.61);
+    -moz-box-shadow: 2px 2px 17px -5px rgba(0,0,0,0.61);
+}
+
+.front-card-img img{
+    width: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.front-card-number{
+    margin-bottom: 1.5rem;
+}
+
+.front-card-number p {
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    color: var(--White);
+    font-family: 'Space Grotesk', sans-serif;  
+}
+
+.front-card-name{
+    display: flex;
+    justify-content: space-between;
+}
+
+.front-card-name p{
+    color: var(--White);
+    font-size: .7rem;  
+    letter-spacing: 1px;
+}
+
+.datemonth{
+    display: flex;  
+}
+
+.back-card{
+    border-radius: 8px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: absolute;
+    width: 26vw;
+    top: 18rem;
+    left: 10rem;
+    height: 10rem;
+    background-image: url(../images/bg-card-back.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: 5px 55px 17px -5px rgba(0,0,0,0.61);
+    -webkit-box-shadow: 2px 2px 17px -5px rgba(0,0,0,0.61);
+    -moz-box-shadow: 2px 2px 17px -5px rgba(0,0,0,0.61);
+}
+
+.back-card p{
+    font-size: .7rem;
+    margin-right: 2.5rem;
+    margin-bottom: .2rem; 
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--White);
+}
+/*cartões-aside*/
+
+
+/*formulário*/
+
+.form{
+    width: 75%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+}
+
+input[type=number]::placeholder,input[type=text]::placeholder{
+    color: var(--Light-grayish-violet);
+}
+
+input[type=number],input[type=text]{
+    font-weight: bold;
+    padding-left: .5rem;
+    border-radius: .3rem;
+    margin-bottom:1rem;
+    height: 2.5rem;
+    border: 1px solid var(--Light-grayish-violet);
+    outline: none;
+}
+input[type=number]:focus, input[type=text]:focus{
+    border: 1px solid var(--Very-dark-violet);
+   
+}
+
+form label{
+    margin-bottom: .2rem;
+    font-size: .75rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: var(--Very-dark-violet);
+}
+
+.MesAnoCvc{
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputMesAno, .cvc{
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    max-width: 50%;
+}
+
+.MesAno{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.inputMMYY{
+    width: 49%;
+   
+}
+
+.inputMMYY input{
+    width: 100%;  
+}
+
+.inputCvc input{
+    width: 100%;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+.button button{
+    width: 100%;
+    height: 2.6rem;
+    border-radius: .3rem;
+    border: none;
+    outline: none;
+    color: #ffff;
+    font-family: 'Space Grotesk', sans-serif;
+    background-color:var(--Very-dark-violet);
+    cursor: pointer;
+}
+
+.button button:hover{
+    background-color: #2e0d41;
+    
+}
+/*formulário*/
+
+
+/*erros*/
+#erroCardNumber, #erroMes, #erroDate, #erroCardName{
+    font-size: .7rem;
+    margin-top: -1rem;
+    margin-bottom:1rem;
+    color: var(--Red-input-errors);
+}
+
+.focus{
+    border: 1px solid red !important;
+}
+.none{
+    display: none !important;
+}
+
+/*erros*/

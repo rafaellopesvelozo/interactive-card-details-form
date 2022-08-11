@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css-->
+    <link rel="stylesheet" href="css/cardDetails.css">
+
+    <!--icon complete css-->
+    <link rel="stylesheet" href="css/iconComplete.css">
+
+    <link rel="stylesheet" href="css/media.css">
+    <title>Card Details</title>
+</head>
+
+<body>
+    <main class="main">
+        <div class="aside-card">
+            <div class="front-card">
+                <div class="front-card-img">
+                    <img src="images/card-logo.svg" alt="">
+                </div>
+                <div class="front-card-number">
+                    <p id="card-number">0000 0000 0000 0000</p>
+                </div>
+                <div class="front-card-name">
+                    <p id="cardName">FELICIA LEIRE</p>
+                    <div class="datemonth">
+                        <p id="cardMonth">00</p>
+                        <p>/</p>
+                        <p id="cardYear">00</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <div class="back-card">
+               
+                <p id="erroCardcvc">0 0 0</p>
+                
+            </div>
+        </div>
+        <div class="form">
+            <form action="#">
+                <label for="name">CARDHOLDER NAME</label>
+                <input type="text" name="name" id="name"  placeholder="e.g Jane Applessed"   >
+                <P id="erroCardName"></P>
+                <label for="inputNumber">CARD NUMBER</label>
+                <input type="number" name="inputNumber" id="inputNumber" placeholder="e.g 1234 4578 9123 0000" >
+                <P id="erroCardNumber"></P>
+
+                <div class="MesAnoCvc">
+                    <div class="inputMesAno">
+
+                        <label for="">EXP. DATE (MM/YY)</label>
+                        <div class="MesAno">
+
+                            <div class="inputMMYY">
+                                <input type="number" name="mes" id="mes" placeholder="MM" >
+                                <p id="erroMes"></p>
+                            </div>
+                            <div class="inputMMYY">
+                                <input type="number" name="ano" id="ano" placeholder="YY" >
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="cvc">
+                        <label for="">CVC</label>
+                        <div class="inputCvc">
+                            <input type="number" name="cvc" id="cvc"  placeholder="e.g. 123">
+                        </div>
+                        <p id="erroDate"></p>
+
+                    </div>
+
+                </div>
+
+                <div class="button">
+                    <button id="btn_submit" type="submit">Confirm</button>
+                </div>
+
+            </form>
+
+            <div class="cardComplete none">
+                <div class="edit-card">
+                    <img src="images/icon-complete.svg" alt="">
+
+                    <h1>THANK YOU!</h1>
+                    <p>We've added your card details</p>
+                    <button id="continue" type="submit">Continue</button>
+                </div> 
+            </div>
+        </div>
+
+
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
